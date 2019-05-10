@@ -3,9 +3,7 @@
 package com.yfujiki.wiremocksample
 
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.test.InstrumentationRegistry
-import androidx.test.espresso.Espresso
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.rule.ActivityTestRule
@@ -13,13 +11,11 @@ import androidx.test.runner.AndroidJUnit4
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.*
 import org.junit.runner.RunWith
-import java.net.InetAddress
 import android.content.Intent
 import okhttp3.mockwebserver.Dispatcher
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.RecordedRequest
 import org.apache.commons.io.IOUtils
-import java.io.File
 
 
 @RunWith(AndroidJUnit4::class)

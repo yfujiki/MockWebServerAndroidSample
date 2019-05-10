@@ -1,7 +1,5 @@
 package com.yfujiki.wiremocksample
 
-import com.yfujiki.wiremocksample.Movie
-import com.yfujiki.wiremocksample.MoviesPage
 import io.reactivex.Flowable
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -9,6 +7,6 @@ import retrofit2.http.Query
 interface TMDBService {
     @GET("3/movie/now_playing")
     fun nowplaying(@Query("page") page: Int,
-                 @Query("api_key") apiKey: String = "<YOUR_API_KEY>"
+                 @Query("api_key") apiKey: String = "caf895c3e8d7b13a7a9b70ca2a9cfd6e"
     ): Flowable<MoviesPage>
 }
