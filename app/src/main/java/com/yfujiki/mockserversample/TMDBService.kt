@@ -7,6 +7,6 @@ import retrofit2.http.Query
 interface TMDBService {
     @GET("3/movie/now_playing")
     fun nowplaying(@Query("page") page: Int,
-                 @Query("api_key") apiKey: String = "caf895c3e8d7b13a7a9b70ca2a9cfd6e"
+                 @Query("api_key") apiKey: String = BuildConfig.TMDB_API_KEY
     ): Flowable<MoviesPage>
 }
