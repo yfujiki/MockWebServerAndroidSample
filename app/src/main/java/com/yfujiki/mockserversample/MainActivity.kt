@@ -1,4 +1,4 @@
-package com.yfujiki.wiremocksample
+package com.yfujiki.mockserversample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

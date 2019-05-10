@@ -1,8 +1,5 @@
-package com.yfujiki.wiremocksample
+package com.yfujiki.mockserversample
 
-import android.content.Context
-import android.net.Uri
-import android.util.DisplayMetrics
 import android.util.Size
 import android.view.LayoutInflater
 import android.view.View

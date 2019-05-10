@@ -1,4 +1,4 @@
-package com.yfujiki.wiremocksample
+package com.yfujiki.mockserversample
 
 import io.reactivex.schedulers.Schedulers
 import okhttp3.OkHttpClient

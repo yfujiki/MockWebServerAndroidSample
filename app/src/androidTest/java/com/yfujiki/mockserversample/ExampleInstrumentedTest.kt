@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.yfujiki.wiremocksample
+package com.yfujiki.mockserversample
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

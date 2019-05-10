@@ -1,4 +1,4 @@
-package com.yfujiki.wiremocksample
+package com.yfujiki.mockserversample
 
 import android.app.Application
 import java.util.concurrent.atomic.AtomicBoolean

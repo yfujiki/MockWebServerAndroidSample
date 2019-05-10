@@ -1,4 +1,4 @@
-package com.yfujiki.wiremocksample
+package com.yfujiki.mockserversample
 
 import io.reactivex.Flowable
 import retrofit2.http.GET

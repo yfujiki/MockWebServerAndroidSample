@@ -1,4 +1,4 @@
-package com.yfujiki.wiremocksample
+package com.yfujiki.mockserversample
 
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
