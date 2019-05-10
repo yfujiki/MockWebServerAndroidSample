@@ -24,6 +24,16 @@ android {
         targetCompatibility = "8"
         sourceCompatibility = "8"
     }
+
+    sourceSets {
+        test {
+            java.srcDirs += "$projectDir/src/testShared"
+        }
+
+        androidTest {
+            java.srcDirs += "$projectDir/src/testShared"
+        }
+    }
 }
 
 dependencies {

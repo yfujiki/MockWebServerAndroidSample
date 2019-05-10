@@ -1,6 +1,5 @@
 package com.yfujiki.wiremocksample
 
-import android.util.Log
 import org.junit.After
 import org.junit.Test
 
@@ -10,17 +9,12 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import okhttp3.mockwebserver.Dispatcher
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import java.lang.AssertionError
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicReference
-import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
-import okhttp3.mockwebserver.RecordedRequest
-import java.io.File
-import java.net.InetAddress
 
 
 /**
@@ -100,17 +94,4 @@ class TMDBServiceTest {
         }
     }
 
-}
-
-internal class RequestDispatcher : Dispatcher() {
-    override fun dispatch(request: RecordedRequest): MockResponse {
-
-        if (request.path.startsWith("/3/movie/now_playing", true)) {
-            val file = File(this::class.java.classLoader.getResource("movies.json").path)
-            val jsonFile = file.readText()
-            return MockResponse().setResponseCode(200).setBody(jsonFile)
-        }
-
-        return MockResponse().setResponseCode(404)
-    }
 }
