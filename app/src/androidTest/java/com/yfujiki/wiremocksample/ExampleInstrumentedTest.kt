@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.yfujiki.wiremocksample
 
 import androidx.test.InstrumentationRegistry

@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = GridLayoutManager(this, 2)
 
-        disposable.add(WireMockSampleApp.getInstance().service.nowplaying(1)
+        disposable.add(MockWebServerSampleApp.getInstance().service.nowplaying(1)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ moviesPage ->
                 adapter.addMovies(moviesPage.results)
