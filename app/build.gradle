@@ -65,11 +65,10 @@ dependencies {
 }
 
 def getTmdbApiKey() {
-    def keysFile = file("keys.properties")
-    def keysProperties = new Properties()
-
     def tmdbApiKey = System.getenv("TMDB_API_KEY")
     if (tmdbApiKey == null) {
+        def keysFile = file("keys.properties")
+        def keysProperties = new Properties()
         keysProperties.load(new FileInputStream(keysFile))
 
         tmdbApiKey = keysProperties['TMDB_API_KEY']
