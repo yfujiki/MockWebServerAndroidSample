@@ -86,3 +86,4 @@ hs_err_pid*
 
 # Sensitive files
 app/keys.properties
+.gitsecret/keys/random_seed
